@@ -9,9 +9,8 @@ export default function Hero({ profile }) {
       <div className="container hero__grid">
         <div className="hero__inner">
           <p className="pill">Available for new projects</p>
-          <h1 className="hero__title">
-            {(profile?.name || "Hashem").split(" ")[0]} <span>{profile?.title || "Data Analyst"}</span>
-          </h1>
+          <h1 className="hero__title">{profile?.name || "Hashem Al Rabee"}</h1>
+          <p className="hero__role">{profile?.title || "Data Analyst"}</p>
           <p className="hero__tagline">{profile?.tagline}</p>
           <div className="hero__cta">
             <a href="#projects" className="btn btn-primary">View Projects</a>
